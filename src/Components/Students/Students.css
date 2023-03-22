@@ -1,0 +1,104 @@
+.Students {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+   overflow-y: auto;
+}
+.Students > h1 {
+    
+    height: 40px;
+    
+}
+.Students .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    
+}
+
+.Students  a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.Students  a:hover {
+    /* background: radial-gradient(white, rgb(251, 240, 177)); */
+    box-shadow: 0 6px 10px 0 rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: all 0.3s;
+    
+}
+
+.Students  a:active {
+    transition: all 0.5s;
+    transform: scale(10);
+    /* transform: rotate(360deg); */
+}
+
+.Students > .cb-sf  > .crud-buttons {
+    font-size: 20px;
+    
+    text-align: start;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 35px;
+    gap: 10px;
+    margin-bottom: 10px;
+    
+    
+    
+}
+
+.Students > .cb-sf  > .search-fields {
+    font-size: 20px;
+    
+    text-align: start;
+    height: 25px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    padding-left: 35px;
+    gap: 3px;
+    margin-bottom: 10px;
+    padding-right: 35px;
+    
+}
+
+.Students > .cb-sf > .crud-buttons >.myButton:hover {
+    color: rgb(0, 79, 79);
+    box-shadow: 0 8px 0 0 rgb(0, 79, 79);
+    border-radius: 0;
+    transition: all 0.5s;
+}
+
+.Students > .cb-sf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.Students > .cb-sf > .price-between-fields {
+    display: flex;
+    height: 25px;
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.Students > .cb-sf > .price-between-fields > input {
+    height: 20px;
+    width: 50px;
+}
+
+.Students > .cb-sf > .price-between-fields > button {
+    height: 30px;
+    width: 85px;
+}

@@ -1,0 +1,19 @@
+
+.LayoutArea {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.head, .foot {
+    height: 50px;
+    
+}
+
+.content {
+    padding: 10px 0;
+    overflow-y: auto;
+    
+}

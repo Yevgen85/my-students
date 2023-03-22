@@ -1,0 +1,43 @@
+.Login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    color: rgb(63, 194, 59);
+    
+}
+
+.Login h1 {
+    font-family: 'Tourney', cursive;
+}
+
+.Login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.submitButtonDiv {
+    text-align: center;
+}
+
+.submitButton {
+    text-align: center;
+    width: 100px;
+    background-color: beige;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 1px 0 2px black;
+}
+
+.submitButton:hover {
+    transition: all 0.1s;
+    transform: scale(1.03);
+}
+
+.submitButton:active {
+    transition: all 0.1s;
+    transform: scale(0.97);
+    background-color: rgb(102, 252, 180);
+}

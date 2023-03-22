@@ -1,0 +1,104 @@
+
+
+.Navbar {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+   justify-content: space-between;
+   align-items: center;
+   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+   padding: 0 15px;
+
+}
+
+.Navbar > .left {
+    display: flex;
+    height: 100%;
+    width: 35%;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+
+.Navbar > .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(58, 55, 55);
+    text-shadow: 1px 2px #000000 ;
+    animation: inout  20s infinite;
+   
+    /* font-family: 'Bungee Spice', cursive; */
+    
+}
+
+.Navbar > .right {
+    display: flex;
+    height: 100%;
+    width: 35%;    
+    padding: 7px;
+    gap: 17px;
+    justify-content: flex-end;
+}
+
+.Navbar  .myButtons  a, button{
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    background: none;
+    border-radius: 3px;
+    
+   
+}
+
+.Navbar  .myButtons  a:hover, button:hover{
+    text-decoration: none;
+    padding: 0 15px;
+    color: rgb(56, 157, 51);
+    font-weight: 600;
+    /* border: 1px solid rgb(255, 255, 255); */
+    box-shadow: 0 1px 0 2px rgb(0, 0, 0);
+    transition: all 0.3s;
+    transform: scale(1.02);
+    background-color: rgb(58, 55, 55);
+}
+
+.Navbar  .myButtons  a:active, button:active {
+    text-decoration: none;
+    padding: 0 15px;
+    color: black;
+    transition: all 0.3s;
+    transform: scale(0.98);
+    
+}
+
+.Navbar > .right > .rotate {
+    animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  @keyframes inout {
+    0%, 90% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+
+  }
+
